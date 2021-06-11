@@ -1,0 +1,26 @@
+:root {
+    --backColor: #222;
+    --foreColor: #EBF5FF;
+    --navbarSize: 2rem;
+    --searchBarSize: 20px;
+    --searchBarFontSize: 18px;
+    --cardWidth: 160px;
+    --cardHeight: 220px;
+}
+body {
+    background-color: var(--backColor);
+    color: var(--foreColor);
+    font-family:  Roboto, sans-serif;
+}
+
+body a {
+    color: var(--foreColor);
+    text-decoration: none;
+}
+
+@media (min-width: 600px) {
+    :root {
+        --cardWidth: 250px;
+        --cardHeight: 330px;
+    }
+}
