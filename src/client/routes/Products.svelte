@@ -47,11 +47,14 @@ onMount(()=>{
 .product-container-right {
     display: grid;
     grid-template-columns: auto auto;
+    align-items: center;
+    justify-items: center;
 }
 .product-descp {
     grid-column: span 2;
 }
 .add-to-cart-button {
+    padding: 1rem;
 }
 @media (min-width: 600px) {
     .product-container {
