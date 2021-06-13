@@ -22,6 +22,9 @@ import Products from './routes/Products.svelte';
         <Route path="/"> 
             <Home />
         </Route>
+        <Route path="*">
+            404
+        </Route>
     </Router>
 </main>
 

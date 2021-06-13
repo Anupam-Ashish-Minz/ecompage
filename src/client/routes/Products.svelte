@@ -15,6 +15,9 @@ onMount(()=>{
     .then(data => [product] = data);
 });
 
+const addToCard = () => {
+}
+
 </script>
 
 <SearchBar />
@@ -24,7 +27,9 @@ onMount(()=>{
     <div class="product-container-right">
         <p class="product-descp">{product?.descp}</p>
         <p class="product-price">INR. {product?.price}</p>
-        <button class="add-to-cart-button">Add to Cart</button>
+        <button class="add-to-cart-button" on:click={addToCard}>
+            add to cart
+        </button>
     </div>
 </div>
 <CardBox />
@@ -54,7 +59,15 @@ onMount(()=>{
     grid-column: span 2;
 }
 .add-to-cart-button {
-    padding: 1rem;
+    border-radius: 5px 5px;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: var(--foreColor);
+    color: var(--backColor);
+}
+.add-to-cart-icon {
+    width: 40px;
 }
 @media (min-width: 600px) {
     .product-container {
